@@ -1,0 +1,49 @@
+general.import = ["/home/URHOME/.cache/wal/colors-alacritty.toml"]
+
+#[colors.bright]
+#black = "#575268"
+#blue = "#89b4fa"
+#cyan = "#94e2d5"
+#green = "#a6e3a1"
+#magenta = "#cba6f7"
+#red = "#f38ba8"
+#white = "#f5e0dc"
+#yellow = "#f9e2af"
+#
+#[colors.cursor]
+#background = "#d9e0ee"
+#text = "#1e1e2e"
+#
+#[colors.normal]
+#black = "#1e1e2e"
+#blue = "#89b4fa"
+#cyan = "#94e2d5"
+#green = "#a6e3a1"
+#magenta = "#cba6f7"
+#red = "#f38ba8"
+#white = "#d9e0ee"
+#yellow = "#f9e2af"
+#
+#[colors.primary]
+#background = "#1e1e2e"
+#foreground = "#d9e0ee"
+
+[env]
+COLORTERM = "truecolor"
+
+[font]
+size = 14
+
+[font.normal]
+#family = "JetBrainsMono Nerd Font"
+family = "HackNerdFont"
+style = "Regular"
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 10
+y = 10
+
+

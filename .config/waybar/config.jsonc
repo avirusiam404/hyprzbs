@@ -1,0 +1,109 @@
+{
+  "position": "top",
+  "margin-top": 15,
+  "modules-left": [
+    "custom/archlogo",
+    "clock",
+    "hyprland/workspaces",
+  ],
+  "modules-center": [
+    "custom/spotify"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "custom/notification"
+  ],
+  "clock": {
+    "interval": 60,
+    "format": "{:%H:%M}",
+    "max-length": 25
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""
+    }
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon} ",
+    "format-bluetooth": "{volume}% {icon} ",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "phone-muted": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ]
+  },
+  "network": {
+    "interface": "wlp0s19f2u4",
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%)  ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗 ",
+    "format-disconnected": "",
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='16pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "icons": {}
+  },
+  "custom/spotify": {
+    "exec": "/URSCRIPTSPATH/mediaplayer.bash",
+    "format": " {}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause -p spotify",
+    "on-scroll-up": "playerctl next -p spotify",
+    "on-scroll-down": "playerctl previous -p spotify"
+  },
+  "custom/archlogo": {
+    "format": "󰣇",
+    "on-click": "alacritty"
+  },
+}
