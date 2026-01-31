@@ -17,7 +17,7 @@ made by avirusiam404
 >
 > install packages:
 > ```bash
-> yay -Sy --needed playerctl alacritty hypr hyprlauncher flameshot wlogout fish starship brightnessctl waybar python-pywal16 cava ttf-hack-nerd swww nvim
+> yay -Sy --needed playerctl alacritty hypr hyprlauncher flameshot wlogout fish starship brightnessctl waybar python-pywal16 cava ttf-hack-nerd swww nvim pyenv
 > ```
 >
 > replace URHOME path and URSCRIPTS path here:
