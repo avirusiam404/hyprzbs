@@ -1,4 +1,5 @@
 @import 'colors/one-dark.css';
+@import '/home/avirus/.cache/wal/colors-waybar.css';
 
 * {
   border: none;
@@ -37,31 +38,31 @@ tooltip label {
 }
 
 #workspaces button {
-  padding: 0px 6px;
+  padding: 0px 3px 0px 6px;
   margin: 0px 3px;
   border-radius: 50px;
-  color: transparent;
+  color: @fg;
   background-color: @bg1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
 }
 
 #workspaces button.active {
   background-color: @blue;
   color: @bg0;
   min-width: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-out;
   font-size: 12px;
 }
 
 #workspaces button:hover {
-  background-color: @purple;
+  background-color: @red;
   color: @bg0;
   min-width: 50px;
   background-size: 400% 400%
 }
 
 #workspaces button.urgent {
-  background-color: @red;
+  background-color: @purple;
   color: @bg0;
   border-radius: 16px;
   min-width: 50px;

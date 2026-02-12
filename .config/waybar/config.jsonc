@@ -10,6 +10,7 @@
     "custom/spotify"
   ],
   "modules-right": [
+    "tray",
     "pulseaudio",
     "network",
     "custom/notification"
@@ -20,19 +21,22 @@
     "max-length": 25
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": ""
-    }
+    "format": "{windows} ",
+	  "format-window-separator": " ",
+	  "window-rewrite-default": "",
+	  "window-rewrite": {
+	  	"title<.*youtube.*>": "",
+      "class<firefox>": "",
+	  	"class<firefox> title<.*github.*>": "",
+      "class<alacritty>": "",
+      "title<cava>": "",
+      "class<spotify": "",
+      "class<discord>": "",
+      "class<.*(minecraft|exploit addon).*>": "󰍳",
+      "class<steam>": "",
+      "class<org.telegram.desktop>": "",
+      "class<codium>": ""
+	  }
   },
   "pulseaudio": {
     "format": "{volume}% {icon} ",
@@ -104,6 +108,8 @@
   },
   "custom/archlogo": {
     "format": "󰣇",
-    "on-click": "alacritty"
+    "on-click": "alacritty",
+    "on-click-right": "hyprlauncher",
+    "on-click-middle": "wlogout"
   },
 }
